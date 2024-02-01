@@ -10,4 +10,4 @@ GitHubs commands : -
  git add .                                  : -     for adding all files to staging area
  git commit -m "Initail commit"             : -     for committing all code
  git remote add origin (link)               : -     push code to remote area
- git push -u origin master
+ git push -u origin master
