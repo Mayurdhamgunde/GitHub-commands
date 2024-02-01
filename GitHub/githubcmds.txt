@@ -1,8 +1,3 @@
----
-runme:
-  id: 01HNHXZVJ9CNWRP717DXMDJ4AV
-  version: v2.2
----
 
 GitHubs commands : - 
 
