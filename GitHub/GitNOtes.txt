@@ -1,0 +1,69 @@
+1. some basic Git commands
+    - git init: initialize a new repository in the current
+    - git add <file>: stage (add to staging area) a file or directory for commitment
+    - git add . (adds all the files)
+    - git status: show the working tree
+    - git commit -m "meaningful message"
+    - git push main origin (updates the changes in the vs code remote repo with your local one)
+    - git remote add origin (link) : adds a remote reference called 'origin' pointing to your GitHub repo
+    - git remote -v (to verify remote)
+    - git branch : creates and lists branches (to check branch)
+    - git branch -M main  : sets the main as the default branch (it basically changes the name of the branch to main )
+
+    ** - git push -u origin main : this is shortcut to say that form now on all the operation will be done on origin main so form now on we  have to just type git push instead of git push origin main.
+  **
+    - git checkout branchName : to navigate btw branches
+    - git checkout -b <-new branch name->  : create & switches to a new branch simultaneously
+    - git branch -d <-branch name-> : deletes branch
+    - git merge branchName : merges the specified branch into the current branch
+
+    ## Now what branch does is it creates 2 diff branches like in tree so that if 2 dev are working on a new feature without disturbing each other they can implement both features so in my case what i did is i made a new feature called feature1 and made a change added a new para in index.html, now what it did is it created 2 branches called main and feature1 now it made a copy of index.html in feature1 so that i can make changes and now i can mearge these 2 main and feature1 
+    There are 2 ways 
+    Way 1 :
+      -git diff branchName (to compare commits, branches and files & more )
+      - git merge branchName (it merges 2 branches)
+    Way 2: using GitHub create PR (PUll REQUEST )
+            it tells other you have made changes in repository
+
+##
+
+  -git pull origin main : to fetch and download form remote repo 
+
+
+
+  Undo changes:
+   CASE 1: if u mistakenly deleted a change and added it to git the use 
+  -git reset <-file name->
+  if want to reset many files the 
+  -git rest 
+  CASE 2: if commited 1 changes then
+  -git reset HEAD~1
+  CASE 3: if commited multiple changes then
+  -git reset <-commit hash->
+  -git reset --hard <-commit hash->
+
+2. Cloning an existing repository from GitHub
+   - Open VS Code and go to File -> Open Folder...
+   - Select the parent folder where you want to clone the project into, e.g., Documents/GitHub
+   - Click on the Source Control icon in the Activity Bar on the left side of VS Code
+     (it looks like two circles connected by a curved line). This will open the Source   Control view.
+   - In the Source Control view, click on the dropdown next to the Source Control icon and select
+     "Clone".
+   - Enter the URL of the repository you wish to clone in the text field that appears. For example,
+     https://github.com/microsoftdocs/python-tutorial.git is the URL for the Python tutorial repository.
+   - Choose the branch you would like to work on (usually master), then click Clone.
+3. Making changes and committing them
+   - Make any desired edits to the codebase within VS Code.
+   - Once you have made your changes, use `git diff` in the terminal to see what has changed.
+   - Stage the changes you've made using `git add`.
+   - Commit the changes using `git commit -m "Your detailed commit message here"`
+4. Syncing your fork with the original repository
+   - To keep your fork up-to-date with the latest version of the upstream repository, you need to add it as a remote
+   - To keep your fork up-to-date with the latest version of the upstream repository, you need to add it as a remote
+   - To keep your fork up-to-date with the latest version of the upstream repository, you need to add it as a remote
+   - To keep your fork up-to-date with the latest version of the upstream repository, you can set it as a remote called
+   - To keep your fork up-to-date with the latest version of the upstream repository, you need to add it as a remote
+   - To keep your fork up-to-date with the latest version of the upstream repository, you need to add it as a remote
+   - To keep your fork up-to-date with the latest version of the upstream repository, you can
+     configure it as a remote called "upstream":
+bash
